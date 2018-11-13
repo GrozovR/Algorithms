@@ -3,7 +3,7 @@
 #define _SCL_SECURE_NO_WARNINGS
 
 
-//возможно без двусвязного списка не обойтись???
+//РІРѕР·РјРѕР¶РЅРѕ Р±РµР· РґРІСѓСЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР° РЅРµ РѕР±РѕР№С‚РёСЃСЊ???
 
 #include <memory>
 using ValueType = int;
@@ -25,10 +25,15 @@ public:
 
 	QueueLst & operator=(QueueLst & rhs);
 
+    void reverse();
+
 	bool isEmpty() const;
 	void enqueue(const ValueType v);
 	ValueType dequeue();
-	
+    const Node*  head() const
+    {
+        return head_;
+    }
 private:
 	Node* head_{ nullptr };
 	Node* tail_{ nullptr };

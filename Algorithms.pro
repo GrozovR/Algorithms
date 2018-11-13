@@ -16,6 +16,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
+        data_stuctures\queueList\queuelist.cpp \
+        data_stuctures\queueList\test.cpp \
+        data_stuctures/Complex/complex.cpp \
+        data_stuctures/Complex/main.cpp
     
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -23,4 +27,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    algorithms\sortingalgorithms.h
+    algorithms\sortingalgorithms.h \
+    data_stuctures\queueList\queuelist.h \
+    data_stuctures/Complex/complex.h

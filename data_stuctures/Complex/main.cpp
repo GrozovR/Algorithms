@@ -4,7 +4,7 @@
 #include <stdexcept>
 
 using namespace std;
-
+/*
 void testComplexConstructor(const double rl,const double im)
 {
 	cout << "Complex{" << rl << ',' << im << "} -> " << flush;
@@ -35,8 +35,8 @@ void testComplexOpCmpNotEq(const Complex& lhs, const Complex& rhs)
 {
 	cout << lhs << " != " << rhs << " -> " << boolalpha << (lhs != rhs) << endl;
 }
-
-
+*/
+/*
 void main()
 {
 	cout << "Complex{} -> " << Complex{} << endl;
@@ -81,4 +81,4 @@ void main()
 	testComplexOpCmpNotEq(r03, r04);
 
 }
-
+*/
